@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.net.URL;
+
 public class Main extends Application {
 
     @Override
@@ -15,6 +17,8 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.setResizable(false);
         primaryStage.show();
+        CouchbaseSingleton couchbase = CouchbaseSingleton.getInstance();
+        couchbase.test();
     }
 
     public static void main(String[] args) {

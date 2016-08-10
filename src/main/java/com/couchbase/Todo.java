@@ -20,6 +20,10 @@ public class Todo {
         this.description = description;
     }
 
+    public void setDocumentId(String documentId) {
+        this.documentId = documentId;
+    }
+
     public String getDocumentId() {
         return this.documentId;
     }
